@@ -23,7 +23,9 @@ def get_random_message(love_percentage):
         ])
         
 @VenomX.on_message(filters.command("love", prefixes="/"))
-def love_command(client, message):
+await VenomX.send_message(message.chat.id, response)
+
+
     command, *args = message.text.split(" ")
     if len(args) >= 2:
         name1 = args[0].strip()
