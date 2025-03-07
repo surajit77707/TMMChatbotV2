@@ -2,7 +2,7 @@ from pyrogram import Client, filters
 import requests
 from Venom import VenomX
 
-@app.on_message(filters.command("meme"))
+@VenomX.on_message(filters.command("meme"))
 def meme_command(client, message):
     api_url = "https://meme-api.com/gimme"
 
