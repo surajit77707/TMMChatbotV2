@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from Venom import app
+from . import app
 
 truth_api_url = "https://api.truthordarebot.xyz/v1/truth"
 dare_api_url = "https://api.truthordarebot.xyz/v1/dare"
