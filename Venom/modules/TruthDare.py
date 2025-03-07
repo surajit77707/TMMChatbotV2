@@ -5,7 +5,7 @@ from Venom import VenomX
 truth_api_url = "https://api.truthordarebot.xyz/v1/truth"
 dare_api_url = "https://api.truthordarebot.xyz/v1/dare"
 
-@app.on_message(filters.command("truth"))
+@VenomX.on_message(filters.command("truth"))
 def get_truth(client, message):
     try:
         response = requests.get(truth_api_url)
@@ -17,7 +17,7 @@ def get_truth(client, message):
     except Exception as e:
         message.reply_text("An error occurred while fetching a truth question. Please try again later.")
 
-@app.on_message(filters.command("dare"))
+@VenomX.on_message(filters.command("dare"))
 def get_dare(client, message):
     try:
         response = requests.get(dare_api_url)
