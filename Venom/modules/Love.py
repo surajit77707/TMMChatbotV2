@@ -35,4 +35,4 @@ def love_command(client, message):
         response = f"{name1}💕 + {name2}💕 = {love_percentage}%\n\n{love_message}"
     else:
         response = "Please enter two names after /love command."
-    Venomx.send_message(message.chat.id, response)
+    VenomX.send_message(message.chat.id, response)
