@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import random
-from Venom import app
+from . import app
 
 def get_random_message(love_percentage):
     if love_percentage <= 30:
