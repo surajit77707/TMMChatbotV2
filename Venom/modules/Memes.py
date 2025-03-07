@@ -1,6 +1,6 @@
 from pyrogram import Client, filters
 import requests
-from Venom import app 
+from . import app 
 
 @app.on_message(filters.command("meme"))
 def meme_command(client, message):
